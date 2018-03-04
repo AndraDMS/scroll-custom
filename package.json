@@ -1,6 +1,6 @@
 {
     "name": "scroll-custom",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Overwrites native DOM scrolling with a customisable physics-based animation.",
     "main": "Scroller.js",
     "scripts": {
@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/AndraDMS/scroll-custom.git"
+        "url": "https://github.com/AndyDSM/scroll-custom.git"
     },
     "keywords": [
     "scroll",

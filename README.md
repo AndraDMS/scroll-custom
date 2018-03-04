@@ -58,7 +58,7 @@ To stop the animation at any time and revert back to the default DOM animation, 
 DOMScroller.stop();
 ```
 
-To check whether `Scroller` is active, use `DOMScroller.on`;
+To check whether `Scroller` is active, use `DOMScroller.on`.
 
 ## Example
 

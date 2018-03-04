@@ -1,22 +1,18 @@
 {
-    "name": "scroll-custom",
-    "version": "0.1.0",
-    "description": "Overwrites native DOM scrolling with a customisable physics-based animation.",
-    "main": "Scroller.js",
-    "scripts": {
-        "test": "echo off"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/AndraDMS/scroll-custom.git"
-    },
-    "keywords": [
+  "name": "scroll-custom",
+  "version": "0.1.0",
+  "description": "Overwrites native DOM scrolling with a customisable physics-based animation.",
+  "main": "Scroller.js",
+  "scripts": {
+    "test": "echo off"
+  },
+  "keywords": [
     "scroll",
     "dom",
     "electron",
     "scrolling",
     "scroller"
   ],
-    "author": "Andy S.",
-    "license": "ISC"
+  "author": "Andy S.",
+  "license": "ISC"
 }

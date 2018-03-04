@@ -27,14 +27,17 @@ DOMScroller.magnitude(0.1); // Default 0.2 - initial velocity of scroll
 DOMScroller.breakAt(1); // Default 1 - greatest velocity to break animation at
 ```
 
-`.direction` specifies which axis the element will scroll through. Default is vertical, if string is neither vertical or horizontal, will default to vertical.
-`.friction` is a constant which reduces velocity by a set amount every animation frame.
-`.magnitude` is the velocity added to the scroll whenever the scrollwheel is applied
-`.breakAt` sets the velocity to 0 when the absolute velocity of scroll decreases to the number specified here.
+`.direction` specifies which axis the element will scroll through. Default is `'vertical'`, if the string specified is neither `'vertical'` nor `'horizontal'`, it will default to vertical.
+
+`.friction` is a constant which reduces the velocity by a set amount every animation frame.
+
+`.magnitude` is the velocity added to the scroll whenever the scrollwheel is applied.
+
+`.breakAt` sets the velocity to 0 when the absolute velocity of scrolling decreases to the number specified.
 
 ## Chaining parameter changes
 
-All the methods specified so far return the parent instance of the `Scroller` object so you can chain them like so:
+All the methods specified so far return the parent instance of the `Scroller` object, so you can chain them like so:
 ```javascript
 DOMScroller.elem(document.getElementById('element'))
     .direction('vertical') 

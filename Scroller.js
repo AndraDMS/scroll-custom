@@ -51,6 +51,7 @@ class Scroller {
         this.listener = (e) => {
 
             e.preventDefault();
+            e.stopPropagation();
             this.scrollV += e.deltaY * this.magnitude_;
 
             if (this.scrollCurr == true) return;
@@ -113,45 +114,3 @@ class Scroller {
 }
 
 module.exports = Scroller;
-
-/*document.getElementById("scrollWrap")
-    .addEventListener('wheel', (e) => {
-        //console.log(e.deltaY);
-        //$(window).scroll();
-        //window.scrollTo(2000*Math.random(), window.scrollTop);
-        //scrollIt(window.scrollTop + e.deltaY, 200, 'easeInOutQuad')
-        var el = document.getElementById("scrollWrap");
-        if (!el.scroll_VX) el.scroll_VX = 0;
-        el.scroll_VX += e.deltaY / 10;
-
-        if (el.scroll_Curr == true) return;
-        el.scroll_Curr = true;
-        //console.log("boi");
-        var scroll = () => {
-            //console.log(el.scroll_VX);
-            el.scrollLeft += el.scroll_VX;
-            if (el.scrollLeft <= 0 && el.scroll_VX <= 0) {
-                el.scroll_VX = 0;
-                el.scroll_Curr = false;
-                return;
-            } else if (el.scrollLeft >= el.scrollWidth - el.clientWidth && el.scroll_VX >= 0) {
-                el.scroll_VX = 0;
-                el.scroll_Curr = false;
-                return;
-            }
-
-            var fric = 0.70
-            fric *= (el.scroll_VX > 0 ? -1 : 1);
-            el.scroll_VX += fric
-
-            if (Math.abs(el.scroll_VX) > 1) {
-                requestAnimationFrame(scroll);
-            } else {
-                el.scroll_VX = 0;
-                el.scroll_Curr = false;
-            }
-        }
-        scroll();
-        //document.documentElement.easeAdd(e.deltaY,0,400,'easeInOutQuad')//scrollLeft += e.deltaY
-    })
-*/
